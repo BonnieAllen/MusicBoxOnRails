@@ -7,6 +7,7 @@ class SongsController < ApplicationController
   end
 
   def new
+
     spotify_token = current_user.spotify_data["credentials"]["token"] if current_user.spotify_data
     spot = SpotifyAPI.new(spotify_token)
     spot_track = spot.get_track params[:artist], params[:title]
@@ -21,6 +22,7 @@ class SongsController < ApplicationController
         ).first_or_create!
         current_user.votes.create! song: song, value: 1
       else
+
         flash[:notice] = "You have submitted too many songs this week. Try again later."
       end
     else
@@ -56,5 +58,5 @@ class SongsController < ApplicationController
     end
     return sorted_results.to_json
   end
-
 end    
+
