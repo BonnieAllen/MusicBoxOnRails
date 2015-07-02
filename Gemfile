@@ -14,10 +14,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'httparty'
 gem 'omniauth'
 gem 'omniauth-spotify'
-<<<<<<< HEAD
 gem 'rollbar'
-=======
->>>>>>> 059af6009603262c288956e9527d0b55e3b4f56d
+
 
 group :development, :test do
   gem 'spring'
@@ -27,11 +25,8 @@ end
 gem 'bootstrap_form'
 gem 'devise'
 gem 'figaro'
-<<<<<<< HEAD
 
-=======
-gem 'pg'
->>>>>>> 059af6009603262c288956e9527d0b55e3b4f56d
+
 gem 'pry-rails'
 gem 'quiet_assets'
 gem 'slim-rails'
@@ -50,9 +45,5 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'puma'
-<<<<<<< HEAD
   gem 'pg'
-=======
-  gem 'rollbar'
->>>>>>> 059af6009603262c288956e9527d0b55e3b4f56d
 end
